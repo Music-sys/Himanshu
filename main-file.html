@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your one-stop solution for all image and PDF tools. Compress, convert, edit, and optimize your files with ease.">
+    <meta name="keywords" content="image tools, PDF tools, compress images, edit PDF, online tools">
+    <meta name="author" content="Your Name">
+    <title>Tools Website - Image & PDF Tools</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        body.dark-theme {
+            background: #333;
+            color: #f9f9f9;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Theme Toggle Button */
+        #theme-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        #theme-toggle:hover {
+            background: #45a049;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Tools Grid */
+        #tools {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        #tools h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: inherit;
+        }
+
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .tool-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .dark-theme .tool-card {
+            background: #444;
+            color: #f9f9f9;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .tool-card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+
+        .tool-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: inherit;
+        }
+
+        .tool-card p {
+            font-size: 1rem;
+            color: inherit;
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            #hero h2 {
+                font-size: 2rem;
+            }
+
+            .tool-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            #hero h2 {
+                font-size: 1.8rem;
+            }
+
+            #hero p {
+                font-size: 1rem;
+            }
+
+            .tool-card h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Tools Website</h1>
+        <button id="theme-toggle">Toggle Theme</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Your One-Stop Solution for Image & PDF Tools</h2>
+        <p>Compress, convert, edit, and optimize your files with ease. Explore our collection of powerful tools designed to make your work easier and faster.</p>
+    </section>
+
+    <!-- Tools Grid -->
+    <section id="tools">
+        <h2>Explore Our Tools</h2>
+        <div class="tool-grid">
+            <!-- Image Tools -->
+            <a href="/img-compressed.html" target="_blank">
+               <div class="tool-card">
+                 <img src="https://cdn-icons-png.flaticon.com/512/3022/3022851.png" alt="Image Compressor">
+                 <h3>Image Compressor</h3>
+                 <p>Compress images without losing quality. Perfect for web and mobile use.</p>
+              </div>
+            </a>
+            <div class="tool-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/136/136522.png" alt="Image Converter">
+                <h3>Image Converter</h3>
+                <p>Convert images to different formats like JPG, PNG, WEBP, and more.</p>
+            </div>
+            <div class="tool-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3148/3148567.png" alt="Image Resizer">
+                <h3>Image Resizer</h3>
+                <p>Resize images to any dimension while maintaining aspect ratio.</p>
+            </div>
+
+            <!-- PDF Tools -->
+            <div class="tool-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="PDF Compressor">
+                <h3>PDF Compressor</h3>
+                <p>Reduce the size of your PDF files without compromising quality.</p>
+            </div>
+            <div class="tool-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/337/337958.png" alt="PDF to Word">
+                <h3>PDF to Word</h3>
+                <p>Convert PDF files to editable Word documents effortlessly.</p>
+            </div>
+            <div class="tool-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/337/337932.png" alt="PDF Merger">
+                <h3>PDF Merger</h3>
+                <p>Combine multiple PDF files into a single document.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Tools Website. All rights reserved.</p>
+    </footer>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        // Check for saved theme in localStorage
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            body.classList.add(savedTheme);
+        }
+
+        // Toggle theme
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            const isDarkTheme = body.classList.contains('dark-theme');
+            localStorage.setItem('theme', isDarkTheme ? 'dark-theme' : '');
+        });
+    </script>
+</body>
+</html>
